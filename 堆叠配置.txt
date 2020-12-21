@@ -1,0 +1,26 @@
+1、堆叠配置：
+（1）配置堆叠ID和优先级
+第一台：stack slot 0 priority 200
+        stack slot 0 renumber 1
+第二台：stack slot 0 renumber 2
+第三台：stack slot 0 renumber 3
+第四台：stack slot 0 renumber 4
+第五台：stack slot 0 renumber 5
+第六台：stack slot 0 renumber 6
+第七台：stack slot 0 renumber 7
+        stack slot 0 priority 150
+
+（2）配置堆叠端口（每一台)
+interface stack-port 0/1
+port interface XGigabitEthernet 0/0/1 enable
+
+y
+
+interface stack-port 0/2
+port interface XGigabitEthernet 0/0/2 enable 
+
+y
+
+
+
+
